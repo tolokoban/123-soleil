@@ -1,0 +1,1 @@
+{"version":3,"file":"background-view.d.ts","sourceRoot":"","sources":["../../../src/view/background/background-view.tsx"],"names":[],"mappings":";AACA,OAAO,uBAAuB,CAAA;AAI9B,MAAM,WAAW,mBAAmB;IAChC,SAAS,CAAC,EAAE,MAAM,CAAA;IAClB,IAAI,EAAE,OAAO,CAAA;IACb,IAAI,EAAE,OAAO,CAAA;CAChB;AAED,MAAM,CAAC,OAAO,UAAU,cAAc,CAAC,KAAK,EAAE,mBAAmB,eAGhE"}
