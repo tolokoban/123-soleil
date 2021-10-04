@@ -1,0 +1,36 @@
+.view-StartView {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.view-StartView > p {
+    font-weight: bolder;
+    padding: 1em;
+    border-radius: .25em;
+    background: #fff7;
+    text-align: center;
+    margin: 1rem;
+}
+
+.view-StartView > button {
+    font: inherit;
+    font-size: 120%;
+    border: inherit;
+    padding: 1em;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 50%;
+    background: #600;
+    color: #fffe;
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    text-align: center;
+    box-shadow: 0 0 .5em .25em #f00, 0 0 .5em #000;
+}

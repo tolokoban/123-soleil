@@ -1,0 +1,22 @@
+.view-BackgroundView {
+    background-image: url(../../gfx/background.webp);
+    background-size: cover;
+    background-position: center top;
+    transition: all 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    transform-origin: center top;
+    transform: scale(1);
+    filter: brightness(100%);
+}
+
+.view-BackgroundView.blur {
+    filter: brightness(40%);
+}
+
+.view-BackgroundView.zoom {
+    transform: scale(2);
+}
