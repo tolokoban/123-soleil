@@ -33,4 +33,9 @@
     letter-spacing: .125em;
     text-align: center;
     box-shadow: 0 0 .5em .25em #f00, 0 0 .5em #000;
+    cursor: pointer;
+}
+
+.view-StartView > button > * {
+    pointer-events: none;
 }

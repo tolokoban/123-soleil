@@ -10,11 +10,11 @@
     margin: 0;
     transform-origin: center top;
     transform: scale(1);
-    filter: brightness(100%);
+    filter: blur(0);
 }
 
 .view-BackgroundView.blur {
-    filter: brightness(40%);
+    filter: blur(16px);
 }
 
 .view-BackgroundView.zoom {

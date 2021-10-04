@@ -1,1 +1,0 @@
-{"version":3,"file":"app-view.d.ts","sourceRoot":"","sources":["../../../src/view/app/app-view.tsx"],"names":[],"mappings":";AAKA,OAAO,gBAAgB,CAAA;AAGvB,MAAM,WAAW,YAAY;IACzB,SAAS,CAAC,EAAE,MAAM,CAAA;IAClB,GAAG,EAAE,gBAAgB,CAAA;IACrB,IAAI,EAAE,gBAAgB,CAAA;CACzB;AAED,MAAM,CAAC,OAAO,UAAU,OAAO,CAAC,KAAK,EAAE,YAAY,eAsBlD"}

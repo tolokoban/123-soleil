@@ -1,11 +1,8 @@
 import * as React from "react"
-import './start-view.css'
-
-
+import "./start-view.css"
 
 export interface StartViewProps {
     className?: string
-    visible: boolean
     onStart(): void
 }
 
@@ -15,17 +12,21 @@ export default function StartView(props: StartViewProps) {
             <div></div>
             <p>Quand la contine retentit, courrez !</p>
             <p>Quand elle s'arrête, ne bougez plus...</p>
-            <button onClick={props.onStart}>Start!</button>
+            <button onClick={props.onStart}>
+                <div>Start!</div>
+            </button>
         </div>
     )
 }
 
-
 function getClassNames(props: StartViewProps): string {
-    const classNames = ['custom', 'view-StartView', props.visible ? 'show' : 'hide']
-    if (typeof props.className === 'string') {
+    const classNames = [
+        "custom",
+        "view-StartView"
+    ]
+    if (typeof props.className === "string") {
         classNames.push(props.className)
     }
 
-    return classNames.join(' ')
+    return classNames.join(" ")
 }

@@ -6,7 +6,6 @@ const COLORS = ["#0f0", "#ff0", "#f00"].map(Color.fromColorOrString)
 
 export interface ShakeProgressViewProps {
     className?: string
-    visible: boolean
     value: number
 }
 
@@ -16,7 +15,7 @@ export default function ShakeProgressView(props: ShakeProgressViewProps) {
     const color1 = Color.ramp(COLORS, percent)
     const color0 = color1.copy()
     color0.rgb2hsl()
-    color0.L = .9
+    color0.L = 0.9
     color0.hsl2rgb()
     const color2 = color1.copy()
     color2.rgb2hsl()
@@ -36,11 +35,7 @@ export default function ShakeProgressView(props: ShakeProgressViewProps) {
 }
 
 function getClassNames(props: ShakeProgressViewProps): string {
-    const classNames = [
-        "custom",
-        "view-ShakeProgressView",
-        props.visible ? "show" : "hide",
-    ]
+    const classNames = ["custom", "view-ShakeProgressView"]
     if (typeof props.className === "string") {
         classNames.push(props.className)
     }

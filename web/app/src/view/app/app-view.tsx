@@ -1,7 +1,9 @@
 import * as React from "react"
 import { Mode } from "../../types"
 import Background from "../background"
+import Dead from "../dead"
 import ShakeProgress from "../shake-progress"
+import Stack from "../stack"
 import Start from "../start"
 import "./app-view.css"
 import { useMode, useShakeValue } from "./hooks"
@@ -21,17 +23,14 @@ export default function AppView(props: AppViewProps) {
     return (
         <div className={getClassNames(props)}>
             <Background blur={mode === Mode.INIT} zoom={mode === Mode.STILL} />
-            <section>
-                <Start
-                    visible={mode === Mode.INIT}
-                    onStart={() => setMode(Mode.RUN)}
-                />
+            <Stack value={`${mode}`}>
+                <Start key={`${Mode.INIT}`} onStart={() => setMode(Mode.RUN)} />
                 <ShakeProgress
-                    className="shake-progress"
-                    visible={mode === Mode.STILL}
+                    key={`${Mode.STILL}`}
                     value={shakeValue}
                 />
-            </section>
+                <Dead key={`${Mode.DEAD}`} />
+            </Stack>
         </div>
     )
 }

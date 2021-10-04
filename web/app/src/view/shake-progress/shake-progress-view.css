@@ -1,6 +1,10 @@
-.view-ShakeProgressView {
-    position: relative;
+div.view-ShakeProgressView {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 5rem;
     height: 3rem;
+    width: auto;
     border-radius: 1rem;
     border: .25rem solid #fffc;
     box-shadow: 0 .125rem .25rem .125rem #0009;
@@ -8,7 +12,7 @@
     overflow: hidden;
 }
 
-.view-ShakeProgressView > div {
+div.view-ShakeProgressView > div {
     position: absolute;
     height: 100%;
     left: 0;
@@ -18,7 +22,7 @@
     overflow: hidden;
 }
 
-.view-ShakeProgressView > div::after {
+div.view-ShakeProgressView > div::after {
     content: ".";
     font-size: 0;
     position: absolute;

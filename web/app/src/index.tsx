@@ -20,11 +20,12 @@ function start() {
     const background = new Image()
     background.src = BackgroundURL
     background.onload = async () => {
-        const audio = await song
-        audio.pause()
-        const gun = await song
-        gun.pause()
-        ReactDOM.render(<App song={audio} gun={gun}/>, document.getElementById("root"))
+        const audioSong = await song
+        const audioGun = await gun
+        ReactDOM.render(
+            <App song={audioSong} gun={audioGun} />,
+            document.getElementById("root")
+        )
         removeSplashScreen()
     }
 }
