@@ -1,0 +1,47 @@
+.view-RunView {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.view-RunView > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: bolder;
+    font-size: 300%;
+    text-shadow: 0 2px 2px #fff,
+    0 -2px 2px #fff,
+    -2px 0 2px #fff,
+    2px 0 2px #fff;
+    color: #000;
+}
+
+.view-RunView::before {
+    content: "RUN";
+    transform: scale(2);
+    font-weight: bolder;
+    font-size: 300%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: #f00;
+    animation: anim-run .5s infinite;
+}
+
+@keyframes anim-run {
+    from { transform: translateY(0) scale(1); opacity: 1; }
+    to { transform: translateY(-3rem) scale(3); opacity: 0; }
+}

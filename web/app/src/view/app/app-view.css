@@ -7,3 +7,13 @@ body,
     padding: 0;
     margin: 0;
 }
+
+.view-AppView pre {
+    background: #fffd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    white-space: pre-wrap;
+    padding: 1rem;
+}

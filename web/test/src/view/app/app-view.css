@@ -1,0 +1,26 @@
+html,
+body,
+.view-AppView {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.view-AppView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.view-AppView > iframe {
+    border: none;
+    box-shadow: 0 .5rem 1rem #000a;
+}
+
+.view-AppView input[type=range] {
+    width: 300px;
+}

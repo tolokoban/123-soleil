@@ -3,10 +3,13 @@ import "./dead-view.css"
 
 export interface DeadViewProps {
     className?: string
+    onClick(): void
 }
 
 export default function DeadView(props: DeadViewProps) {
-    return <div className={getClassNames(props)}></div>
+    return <div className={getClassNames(props)}>
+        <button onClick={props.onClick}>Recommencer</button>
+    </div>
 }
 
 function getClassNames(props: DeadViewProps): string {
